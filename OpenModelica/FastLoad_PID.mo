@@ -1,5 +1,3 @@
-within ReferenceOM.TransientRuns;
-
 model FastLoad_PID "Reference fast load model with PID controller. Compatible with v0.25"
   //-------------------- Steam geneartor part ----------------------//
   //-------------------- Turbomachinery components ----------------------//
@@ -8,7 +6,7 @@ model FastLoad_PID "Reference fast load model with PID controller. Compatible wi
     Placement(transformation(origin = {86, 52}, extent = {{10, -10}, {-10, 10}})));
   Modelica.Blocks.Sources.BooleanExpression booleanExpression1(y = time < 3000) annotation(
     Placement(transformation(origin = {134, 52}, extent = {{10, -10}, {-10, 10}})));
-  Modelica.Blocks.Sources.CombiTimeTable FastLoadDemand(extrapolation = Modelica.Blocks.Types.Extrapolation.HoldLastPoint, fileName = "/home/wspark/projects/AmazonRunScripts/Pythons/dataCenterLoad/High_res_profile/N_1_llama2.txt", startTime = 3000, tableName = "LoadData", tableOnFile = true, timeEvents = Modelica.Blocks.Types.TimeEvents.NoTimeEvents) annotation(
+  Modelica.Blocks.Sources.CombiTimeTable FastLoadDemand(extrapolation = Modelica.Blocks.Types.Extrapolation.HoldLastPoint, fileName = "/home/wspark/projects/HTGR-DC-Input-Files/Results/DCdemand/N_5_llama2.txt", startTime = 3000, tableName = "LoadData", tableOnFile = true, timeEvents = Modelica.Blocks.Types.TimeEvents.NoTimeEvents) annotation(
     Placement(transformation(origin = {134, 24}, extent = {{10, -10}, {-10, 10}})));
   ThermoPower.Water.Flow1DFV2ph economizer_secondary(A = 0.0001337, Dhyd = 13.05e-3, DynamicMomentum = true, FFtype = ThermoPower.Choices.Flow1D.FFtypes.Colebrook, FluidPhaseStart = ThermoPower.Choices.FluidPhase.FluidPhases.Liquid, redeclare model HeatTransfer = ThermoPower.Thermal.HeatTransferFV.DittusBoelter, Kfc = 2, L = 12.9, N = 10, Nt = 359, dpnom(displayUnit = "kPa") = 176000, e = 0.00015, hstartin = 856795, hstartout = 1559329, noInitialPressure = false, omega = 0.041, pstart(displayUnit = "MPa") = 1.45e7, wnf = 0.5, wnm = 0.1, wnom = 69.08) annotation(
     Placement(transformation(origin = {-224, -38}, extent = {{10, 10}, {-10, -10}}, rotation = -90)));

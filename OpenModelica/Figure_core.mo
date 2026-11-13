@@ -1,5 +1,3 @@
-within ReferenceOM.TransientRuns;
-
 model Figure_core "Reference basic-profile test model for tuning PID. Compatible with v0.25"
   // This is reference PID-controlled model based on rankine_regeneration_v2.mo.
   // 1. Re_min in hot and avg channel is the point where Nu from Dittus-Boleter becomes 3.66. Not really touch this point durig simulation though.

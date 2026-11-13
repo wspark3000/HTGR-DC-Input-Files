@@ -1,5 +1,3 @@
-within ReferenceOM.TransientRuns;
-
 model BasicProfile_SMC "Reference basic-profile test model for tuning SMC. Compatible with v0.25"
   // This is SMC version of basicProfile test. Fwpp controller is troublesome, causing kind of chattering at low power condition. Other than this, everything works well and is agreed with PID version.
   ThermoPower.Water.Flow1DFV2ph economizer_secondary(A = 0.0001337, Dhyd = 13.05e-3, DynamicMomentum = true, FFtype = ThermoPower.Choices.Flow1D.FFtypes.Colebrook, FluidPhaseStart = ThermoPower.Choices.FluidPhase.FluidPhases.Liquid, redeclare model HeatTransfer = ThermoPower.Thermal.HeatTransferFV.DittusBoelter, Kfc = 2, L = 12.9, N = 10, Nt = 359, dpnom(displayUnit = "kPa") = 176000, e = 0.00015, hstartin = 856795, hstartout = 1559329, noInitialPressure = false, omega = 0.041, pstart(displayUnit = "MPa") = 1.45e7, wnf = 0.5, wnm = 0.1, wnom = 69.08) annotation(

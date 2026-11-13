@@ -1,5 +1,3 @@
-within ReferenceOM.TransientRuns;
-
 model BaseLoad_PID "Reference base load model with PID controller. Compatible with v0.25"
   //-------------------- Steam geneartor part ----------------------//
   //-------------------- Turbomachinery components ----------------------//

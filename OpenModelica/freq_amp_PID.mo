@@ -1,5 +1,3 @@
-within ReferenceOM.Characterization;
-
   model freq_amp_PID "Reference model for PID-version freq_amp analysis. Compatible with v0.25"
     Modelica.Blocks.Math.Gain gain(k = 65.5e6) annotation(
       Placement(transformation(origin = {240, 18}, extent = {{10, -10}, {-10, 10}})));
