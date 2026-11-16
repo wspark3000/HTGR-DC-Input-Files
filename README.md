@@ -1,6 +1,6 @@
 # HTGR-DC-Input-Files
 
-This repository includes input files to reproduce the results in a paper, "Frequency-Dependent Dynamic Analysis of a Prismatic HTGR Power System for Data Center Applications".
+This repository includes input files to reproduce the results in a paper, "Frequency-Dependent Dynamic Analysis of a Prismatic HTGR Power System for Data Center Applications". The preprint version of this paper can be found in here: https://engrxiv.org/preprint/view/8817
 
 **ThermoPower**: A modified source code of ThermoPower library, which requires OpenModelica v1.26.7 (not tested in other OpenModelica versions). All new codes are compiled in ThermoPower/customModel which has the same folder architecture as the original one. _Examples_ folder contain some simple verifications of the models.
 
